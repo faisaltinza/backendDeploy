@@ -11,6 +11,10 @@ app.get('/hey', (req, res) => {
     res.send("<h1>NIkal pehli fursat me </h1>")
 })
 
+app.get('/json', (req, res) => {
+    res.json({message: "This is a JSON response"})
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
